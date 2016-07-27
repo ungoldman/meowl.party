@@ -3,26 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Meowl Party</title>
-  <style>
-  html {
-    background: #000;
-    background-size: contain;
-  }
-  </style>
+  <style>html { background: #000; }</style>
 </head>
 <body>
   <!-- experience meowls -->
   <script>
     function summonMeowl () {
-      var min = 1
       var max = 16
-      var num = Math.floor(Math.random() * (max - min + 1)) + min
-      var html = document.getElementsByTagName('html')[0]
-      var bg = '#000 url(/meowls/' + num + '.jpg) no-repeat center center fixed'
+      var num = Math.floor(Math.random() * max) + 1
+      var html = document.querySelector('html')
 
-      console.log(bg)
-
-      html.style.background = bg
+      html.style.background = '#000 url(/meowls/' + num + '.jpg) no-repeat center center fixed'
       html.style.backgroundSize = 'contain'
     }
 
