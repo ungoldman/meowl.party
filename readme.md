@@ -1,4 +1,4 @@
-# [meowl.party](meowl.party)
+# [meowl.party](http://meowl.party)
 
 A masterpiece in the making.
 
