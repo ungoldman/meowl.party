@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meowl Party</title>
+  <style>
+  html {
+    background: #000;
+    background-size: contain;
+  }
+  </style>
+</head>
+<body>
+  <!-- experience nothingness -->
+  <script>
+    function summonMeowl () {
+      var min = 1
+      var max = 16
+      var num = Math.floor(Math.random() * (max - min + 1)) + min
+      var html = document.getElementsByTagName('html')[0]
+      var bg = '#000 url(/meowls/' + num + '.jpg) no-repeat center center fixed'
+
+      console.log(bg)
+
+      html.style.background = bg
+      html.style.backgroundSize = 'contain'
+    }
+
+    document.addEventListener('DOMContentLoaded', function (event) {
+      summonMeowl()
+      setInterval(summonMeowl, 4444)
+    })
+  </script>
+</body>
+</html>
