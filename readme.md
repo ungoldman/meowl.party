@@ -1,4 +1,4 @@
-# [meowl.party](http://meowl.party)
+# [meowl.party](https://ungoldman.github.io/meowl.party)
 
 A masterpiece in the making.
 
